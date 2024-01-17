@@ -1,0 +1,8 @@
+def ekub(a, b, c):
+    min_son = min(a, b, c)
+    for i in range(min_son, 0, -1):
+        if a % i == 0 and b % i == 0 and c % i == 0:
+            return i
+
+ekub_son = ekub(12, 18, 24)
+print(ekub_son)
